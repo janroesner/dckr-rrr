@@ -1,0 +1,7 @@
+version: '2'
+services:
+
+  sipflex:
+    volumes:
+      - .:/app
+      - /app/node_modules

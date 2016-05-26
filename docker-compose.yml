@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  sipflex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm run dev
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3030:3030"
